@@ -8,7 +8,7 @@ const LAST_PAGE_TO_SCRAPE = 10;
 const QUANTITY_OF_PAGES_PER_WORKER = 1;
 
 const BASE_URL = 'https://stackoverflow.com/questions?page=';
-const URL_ORDERING = '&sort=votes';
+const URL_ORDERING = '&sort=votes'; 
 
 if (CLUSTER.isMaster) {
     let nextPage = 1;
